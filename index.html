@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedra, Papel e Tesoura</title>
+  <link rel="stylesheet" href="jokempo.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Jokenpô</h1>
+    
+    <div class="scoreboard">
+      <div class="score-box">
+        <span>Você</span>
+        <span id="player-score">0</span>
+      </div>
+      <div class="score-box">
+        <span>CPU</span>
+        <span id="computer-score">0</span>
+      </div>
+    </div>
+
+    <div class="display-area">
+      <div class="choice-display" id="player-choice">❓</div>
+      <div class="vs">VS</div>
+      <div class="choice-display" id="computer-choice">❓</div>
+    </div>
+
+    <div id="result" class="result-message">Escolha uma opção para jogar!</div>
+
+    <div class="options">
+      <button class="btn-option" data-choice="pedra" title="Pedra">✊</button>
+      <button class="btn-option" data-choice="papel" title="Papel">✋</button>
+      <button class="btn-option" data-choice="tesoura" title="Tesoura">✌️</button>
+    </div>
+
+    <button id="btn-reset" class="btn-reset">Reiniciar Jogo</button>
+  </div>
+
+  <script src="jokempo.js"></script>
+</body>
+</html>
